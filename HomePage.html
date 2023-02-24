@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Main Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.menu {display: none}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("/w3images/pizza.jpg");
+  min-height: 90%;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="#" class="w3-bar-item w3-button">HOME</a>
+    <a href="#menu" class="w3-bar-item w3-button">MENU</a>
+    <a href="#about" class="w3-bar-item w3-button">HOURS</a>
+   <!--
+   <a href="#myMap" class="w3-bar-item w3-button">CONTACT</a>
+   -->
+  </div>
+</div>
+  
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-padding">
+    <span class="w3-tag w3-xlarge">Open from 10am to 12pm</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white w3-hide-small" style="font-size:100px">Txwes<br>CARRY OUT</span>
+    <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px"><b>thin<br>CRUST PIZZA</b></span>
+    <p><a href="#menu" class="w3-button w3-xxlarge w3-black">LOGIN TO ORDER</a></p>
+  </div>
+</header>
+
+<!-- Menu Container -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+  
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">THE MENU</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Which Wich</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Bibim Boh</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">zoca</div>
+      </a>
+    </div>
+    
+<!-- BEGINING OF WHICH WICH -->
+
+	
+      
+
+    <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Choose Your Base</b> <span class="w3-right w3-tag w3-dark-grey w3-round">step 1</span></h1>
+      <p class="w3-text-grey">white Bread</p>
+      <p class="w3-text-grey">Wheat Bread</p>
+      <p class="w3-text-grey">Bowlwich</p>
+      <p class="w3-text-grey">Wrap</p>
+      <hr>
+      
+      <h1><b>Choose Size</b> <span class="w3-right w3-tag w3-dark-grey w3-round">step 2</span></h1>
+      <p class="w3-text-grey">Regular<span class="w3-right w3-tag w3-dark-grey w3-round"></span></p>
+      <p class="w3-text-grey">Large<span class="w3-right w3-tag w3-dark-grey w3-round"></span></p>
+      <p class="w3-text-grey">Super<span class="w3-right w3-tag w3-dark-grey w3-round"></span></p>
+      <hr>
+   
+      <h1><b>The Wicked</b> <span class="w3-tag w3-red w3-round">Signature</span><span class="w3-right w3-tag w3-dark-grey w3-round">$7.25</span></h1>
+      <p class="w3-text-grey">Turkey, ham, roast beef, pepperoni, applewood smoked bacon, cheddar, provolone, pepper jack, lettuce, tomatoes, red onions, & mayo</p>
+      <hr>
+      
+      <h1><b>Cali Club</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$7.95</span></h1>
+      <p class="w3-text-grey">Turkey, applewood smoked bacon, avocado, cheddar, lettuce, tomatoes, red onions & mayo</p>
+      <hr>
+      
+      <h1><b>Grinder</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$6.25</span></h1>
+      <p class="w3-text-grey">Genoa salami, pepperoni, spicy capicola, provolone, lettuce, tomatoes, red onions, oil & vinegar</p>
+      <hr>
+      
+      <h1><b>Black Bean Avocado</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$7.25</span></h1>
+      <p class="w3-text-grey">Vegan black bean patty, avocado, provolone, lettuce, tomatoes, red onions & mayo</p>
+      <hr>
+      
+      <h1><b>French Dip</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$10.00</span></h1>
+      <p class="w3-text-grey">Roast beef, caramelized onions, provolone cheese & au jus</p>
+      <hr>
+      
+      <h1><b>Buffalo Chicken</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$6.25</span></h1>
+      <p class="w3-text-grey">Chicken, provolone, buffalo sauce, lettuce, tomatoes & ranch</p>
+      <hr>
+
+      <h1><b>Mealball</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$7.25</span></h1>
+      <p class="w3-text-grey">Italian meatballs with marinara & provolone</p>
+      <hr>
+
+      <h1><b>Philly Cheesesteak</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$7.95</span></h1>
+      <p class="w3-text-grey">Sirloin steak, provolone, caramelized onions & salted bell peppers</p>
+      <hr>
+
+      <h1><b>Ultimate BLT</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$7.95</span></h1>
+      <p class="w3-text-grey">Applewood smoked bacon, avocado, pepper jack, lettuce, tomatoes & mayo</p>
+      <hr>
+
+      <h1><b>Cheese Pizzawich</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.50</span></h1>
+      <p class="w3-text-grey">Provolone, mozzarella cheese & marinara sauce</p>
+      <hr>
+
+      <h1><b>Make It A Meal</b> <span class="w3-right w3-tag w3-dark-grey w3-round"></span></h1>
+      <p class="w3-text-grey">Chips<span class="w3-right w3-tag w3-dark-grey w3-round">$1.50</span></p>
+      <p class="w3-text-grey">Regular Drink<span class="w3-right w3-tag w3-dark-grey w3-round">$2.00</span></p>
+      <p class="w3-text-grey">Large Drink<span class="w3-right w3-tag w3-dark-grey w3-round">$2.50</span></p>
+      <hr>
+
+    </div>
+ <!-- THIS IS THE END FOR wHICH WHICH -->
+ 
+ <!-- BEGINING OF Bibim bom -->
+
+    <div id="Pasta" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Chicken Bibimbap</b> <span class="w3-tag w3-grey w3-round">Popular</span> <span class="w3-right w3-tag w3-dark-grey w3-round">$9.59</span></h1>
+      <p class="w3-text-grey">Korean rice bowl with seared chicken, sesame spinach, Kimchi and water chestnuts. topped with a fried egg, korean hot pepper paste [Gochujang] and scallion</p>
+      <hr>
+   
+      <h1><b>Prok Bibimbap</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$9.59</span></h1>
+      <p class="w3-text-grey">Korean rice bowl with seared prok, sesame spinach, pickled cucumber and Kimchi, topped with a fried egg,Koreon hot pepper past [Gochujang] and scallion</p>
+      <hr>
+      
+      <h1><b>Tofu Bibimbap</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$9.59</span></h1>
+      <p class="w3-text-grey">Korean rice bowl with seared tofu, sesame spinach, pickled cucumber and Kimchi. Topped with a fried egg, Korean hot pper paste [Gochujang] and scallion</p>
+      <hr>
+
+      <h1><b>Beef Bibimbap</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$9.59</span></h1>
+      <p class="w3-text-grey">Korean rice bowl with seared marinated beef, sesame spinach, Kimchi and pickled cucumber, topped with a fried egg, Korean hot pepper paste [Gonchujang] and Scallion</p>
+    </div>
+<!--END OF BIBIM BOM -->
+
+
+<!--BEGINING OF ZOCA -->
+
+    <div id="Starter" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Today's Soup</b> <span class="w3-tag w3-grey w3-round">Seasonal</span><span class="w3-right w3-tag w3-dark-grey w3-round">$5.50</span></h1>
+      <p class="w3-text-grey">Ask the waiter</p>
+      <hr>
+   
+      <h1><b>Bruschetta</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$8.50</span></h1>
+      <p class="w3-text-grey">Bread with pesto, tomatoes, onion, garlic</p>
+      <hr>
+      
+      <h1><b>Garlic bread</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$9.50</span></h1>
+      <p class="w3-text-grey">Grilled ciabatta, garlic butter, onions</p>
+      <hr>
+      
+      <h1><b>Tomozzarella</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$10.50</span></h1>
+      <p class="w3-text-grey">Tomatoes and mozzarella</p>
+      <hr>
+      
+      <h1><b>Create Your Own Dish</b> <span class="w3-right w3-tag w3-dark-grey w3-round">step 1</span></h1>
+      <p class="w3-text-grey">chicken tinga<span class="w3-right w3-tag w3-dark-grey w3-round">$7.39</span></p>
+      <p class="w3-text-grey">ancho lime carne asada<span class="w3-right w3-tag w3-dark-grey w3-round">$8.29</span></p>
+      <p class="w3-text-grey">citrus braised pork<span class="w3-right w3-tag w3-dark-grey w3-round">$7.39</span></p>
+      <p class="w3-text-grey">ancho lime portabello mushroom<span class="w3-right w3-tag w3-dark-grey w3-round">$7.39</span></p>
+      <hr>
+      
+      <h1><b>Create Your Own Dish</b> <span class="w3-right w3-tag w3-dark-grey w3-round">step 2</span></h1>
+      <p class="w3-text-grey">burrito</p>
+      <p class="w3-text-grey">bowl</p>
+      <p class="w3-text-grey">soft tacos</p>
+      <p class="w3-text-grey">quesadilla</p>
+      <p class="w3-text-grey">nachos</p>
+      <hr>
+      
+      <h1><b>Create Your Own Dish</b> <span class="w3-right w3-tag w3-dark-grey w3-round">step 3</span></h1>
+      <p class="w3-text-grey">cilantro lime rice</p>
+      <p class="w3-text-grey">charro beans</p>
+      <p class="w3-text-grey">black beans</p>
+      <hr>
+      
+      <h1><b>Create Your Own Dish</b> <span class="w3-right w3-tag w3-dark-grey w3-round">step 4</span></h1>
+      <p class="w3-text-grey">pico de gallo</p>
+      <p class="w3-text-grey">sour cream</p>
+      <p class="w3-text-grey">shredded cheddar cheese</p>
+      <p class="w3-text-grey">shredded lettuce</p>
+      <p class="w3-text-grey">pickled jalapeño</p>
+      <p class="w3-text-grey">pickled red onion</p>
+      <p class="w3-text-grey">roasted salsa</p>
+      <p class="w3-text-grey">salsa verde</p>
+      <hr>
+      
+      <h1><b>Create Your Own Dish</b> <span class="w3-right w3-tag w3-dark-grey w3-round">step 5</span></h1>
+      <p class="w3-text-grey">guacamole<span class="w3-right w3-tag w3-dark-grey w3-round">$2.29</span></p>
+      <p class="w3-text-grey">salsa<span class="w3-right w3-tag w3-dark-grey w3-round">$1.09</span></p>
+      <p class="w3-text-grey">green chili queso<span class="w3-right w3-tag w3-dark-grey w3-round">$1.29</span></p>
+      <p class="w3-text-grey">additional protein<span class="w3-right w3-tag w3-dark-grey w3-round">$2.19</span></p>
+      <p class="w3-text-grey">additional toppings<span class="w3-right w3-tag w3-dark-grey w3-round">$0.59</span></p>
+      <hr>
+     
+      <h1><b>Beverages</b> <span class="w3-right w3-tag w3-dark-grey w3-round">step 6</span></h1>
+      <p class="w3-text-grey">Medium<span class="w3-right w3-tag w3-dark-grey w3-round">$2.59</span></p>
+      <p class="w3-text-grey">Large<span class="w3-right w3-tag w3-dark-grey w3-round">$2.89</span></p>
+      <p class="w3-text-grey">Bottled Water<span class="w3-right w3-tag w3-dark-grey w3-round">$2.29</span></p>
+      <hr>
+     
+    </div><br>
+
+  </div>
+</div>
+
+<!-- About Container -->
+<div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="about">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Hours</h1>
+    
+    <h1><b>Opening Hours</b></h1>
+    
+    <div class="w3-row">
+      <div class="w3-col s6">
+      <h2><b> Which Wich </b> </h2>
+        <p>Monday-Thursday 10:30 AM - 7pm </p>
+        <p>Friday 10:30 AM - 2pm </p>
+        <p>Sat & Sunday ClOSED</p>
+      </div>
+      <div class="w3-col s6">
+      <h2><b> Bibim Boh </b> </h2>
+        <p>Monday-Thursday 11AM - 4PM</p>
+        <p>Friday-Sunday ClOSED</p>
+      </div>
+      
+     <div class="w3-col s6">
+      <h2><b> Zoca </b> </h2>
+        <p>Monday-Thursday 11AM - 4PM</p>
+        <p>Friday-Sunday ClOSED</p>
+      </div>
+    
+   </div> 
+</div>
+
+<!-- Image of location/map -->
+<img src="/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;" id="myMap">
+
+<!-- Contact -->
+<div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contact</h1>
+    <p>Find out more information vist our home page</p>
+    <p><span class="w3-tag">FYI!</span> comming soon delivery!</p>
+    <p class="w3-xxlarge"><strong>Review </strong>leave us a review on how to improve site! Thank you</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-light-grey w3-block" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">DatabaseClasss</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
